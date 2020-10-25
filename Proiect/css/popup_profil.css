@@ -1,0 +1,119 @@
+a{
+	text-decoration:none;
+	color:inherit;
+}
+.popup_profil{
+	font-family: 'Poppins', sans-serif;
+	display:none;
+	position: fixed;
+	padding: 20px 10px;
+  background: #f3e700;
+  top: 62px;
+  right: 5px;
+  border-radius: 10px;
+}
+.popup_nume{
+  padding: 20px 20px;
+}
+.centru{
+	text-align:center;
+}
+.continut{
+	margin-top:65px;
+  display: grid;
+	padding: 20px 20px;
+}
+.popup_date{
+	font-size:0.8em;
+	text-align-last:right;
+	padding-right:40px;
+}
+.popup_date_titlu{
+	padding-bottom: 5px;
+}
+
+.popup_log_out{
+	padding-top: 15px;
+}
+
+.popup_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.popup_table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.popup_link:hover{
+	color:gray;
+}
+
+.popup_table th,
+.popup_table td {
+  padding: 12px 15px;
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.popup_table td.prezenta_cell {
+  padding: 0px;
+  position: relative;
+}
+.popup_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.popup_table tbody tr:nth-child(even){
+	background-color: #dddddd;
+}
+.popup_table tbody tr:nth-child(odd){
+	background-color: white;
+}
+
+.popup_table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.empty_cell{
+	background-color: #ffc7c7;
+}
+.full_cell{
+	background-color: #b4fbb1;
+}
+.ok_pass{
+		text-align: center;
+    background-color: rgba(51, 190, 143, 0.87);
+    padding: 10px 40px;
+    color: #f1e9e9;
+    border-radius: 20px;
+		border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+		background-size: 200%;
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 900px) {
+	.popup_table{
+		font-size:0.5em;
+	}
+	.continut{
+		padding: 0px 5px;
+		margin-top: 65px;
+	}
+	.container_insert{
+    padding-bottom: 0px;
+	}
+}
+@media screen and (max-width: 600px) {
+
+	.form_add {
+    display: initial;
+	}
+}

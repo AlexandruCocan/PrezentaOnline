@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+li, button{
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #038257;
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	position:fixed;
+	top:0;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 5px 3vw;
+	overflow: hidden;
+	background-color: rgba(36, 37, 42, 0.9);
+	z-index:99;
+}
+/* Animatii pentru link-urile meniului */
+.animatie{
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #f3e700;
+	font-size: 16px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+/* Animatie la hover pentru link-urile meniului */
+.animatie:hover{
+		transition-delay: 0.6s;
+		background: rgba(243, 225, 20, 0.75);
+		box-shadow: 0 0 10px #f3e700, 0 0 40px #f3e700, 0 0 80px #f3e700;
+		border-radius: 50px;
+}
+/* Pozitionarea liniilor din animatie */
+.animatie span{
+	position: absolute;
+	display: block;
+}
+/* Animatie pentru primul span din link */
+.animatie span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #f3e700);
+}
+.animatie:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.3s;
+}
+/* Animatie pentru al 2-lea span din link */
+.animatie span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #f3e700);
+}
+.animatie:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.15s;
+  transition-delay: 0.2s;
+}
+/* Animatie pentru al 3-lea span din link */
+.animatie span:nth-child(3){
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #f3e700);
+}
+.animatie:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.3s;
+  transition-delay: 0.25s;
+}
+/* Animatie pentru al 4-lea span din link */
+.animatie span:nth-child(4){
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #f3e700);
+}
+.animatie:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.15s;
+  transition-delay: 0.50s;
+}
+.logo{
+	width: 60px;
+	cursor: pointer;
+}
+.nav_links{
+	list-style:none;
+	display: flex;
+}
+.nav_links li{
+	display: inline-block;
+	padding: 0px 2vw;
+}
+
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+	color: #0088a9;
+}
+
+button{
+	padding: 9px 25px;
+	background-color: rgb(243, 231, 0);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color: rgb(210, 185, 32);
+}
+
+/* Ecran mic */
+@media screen and (max-width: 900px){
+	.nav_links li{
+		padding: 0;
+	}
+	header{
+    padding: 5px 0vw;
+	}
+}

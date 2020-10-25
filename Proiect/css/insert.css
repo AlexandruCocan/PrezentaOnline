@@ -1,0 +1,98 @@
+select{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    background: #009879;
+    box-shadow: none;
+    cursor: pointer;
+    color: #fff;
+    -webkit-appearance: checkbox;
+}
+.container_insert{
+  margin-top: 65px;
+  text-align: justify;
+  padding: 20px 20px;
+}
+.form_add{
+  display: inline-flex;
+  width: 50vw;
+}
+.btn_add{
+  display: inline-block;
+  border-radius: 25px;
+  outline: none;
+  padding: 2px 20px;
+  margin-left: 20px;
+  border: none;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-size: 200%;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.continut form{
+  width:100%;
+}
+
+/* The container */
+.checkbox {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffc7c7;
+  z-index: -1;
+}
+.checkbox:hover input ~ .checkmark {  //din rosu in verde
+  background-color: #b4fbb1;
+}
+.checkbox input:checked ~ .checkmark {
+  background-color: #b4fbb1;
+}
+
+.checkbox input:checked:hover ~ .checkmark {  //din verde in rosu
+  background-color: #ffc7c7;
+}
+.center{
+  text-align: right;
+  padding: 10px 20px;
+}
+
+
+@media screen and (max-width: 900px){
+  .btn_add {
+    width: 82px;
+    margin: 20px 100px;
+    padding: 10px;
+  }
+  .form_add {
+    flex-direction: column;
+  }
+  .container_insert{
+      text-align: center;
+  }
+}
